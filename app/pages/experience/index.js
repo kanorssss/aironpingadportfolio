@@ -72,7 +72,7 @@ export default function Experience() {
         <a
           className="inline-flex items-center font-medium leading-tight text-[#F0DB4F]  group"
           aria-label="View Full Résumé"
-          href=""
+          href="/AIRON JIM PINGAD.pdf"
         >
           <span>
             <span className="border-b border-transparent pb-px transition group-hover:border-[#F0DB4F] motion-reduce:transition-none">
