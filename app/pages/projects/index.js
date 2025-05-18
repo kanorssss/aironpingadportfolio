@@ -17,7 +17,7 @@ export default function Projects() {
       description:
         "A user-friendly web-based Barangay Profiling System designed to manage resident information, household records, and barangay statistics. The system integrates data analytics tools for visualizing demographic trends and patterns, and includes a built-in Short Message Service (SMS) functionality for sending timely announcements and alerts to residents.",
       image: "/images/projects/profiling.png",
-      tools: ["PHP", "Laravel", "Tailwind CSS"],
+      tools: ["PHP", "HTML", "CSS", "JAVASCRIPT", "JQUERY", "MYSQL"],
     },
     {
       title: "Sangguniang Kabataan",
@@ -25,7 +25,7 @@ export default function Projects() {
       description:
         "A web-based application designed to support the operations of the Sangguniang Kabataan (SK), featuring modules for youth profiling, project and budget monitoring, meeting documentation, and community engagement. The system streamlines SK activities and promotes transparency and accountability in youth-led governance.",
       image: "/images/projects/skpiat.png",
-      tools: ["PHP", "Laravel", "Vue", "Vuetify"],
+      tools: ["PHP", "Laravel", "HTML", "CSS", "JAVASCRIPT", "MYSQL"],
     },
   ];
   return (
