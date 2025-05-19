@@ -15,7 +15,7 @@ import {
 } from "react-icons/fa6";
 import { TbBrandCSharp } from "react-icons/tb";
 import { IoLogoIonic } from "react-icons/io";
-import { SiPostman } from "react-icons/si";
+import { SiNextdotjs, SiPostman } from "react-icons/si";
 import {
   SiTailwindcss,
   SiVuetify,
@@ -40,6 +40,7 @@ export default function Tools() {
     { icon: FaCss3Alt, title: "Css" },
     { icon: FaSquareGitlab, title: "Gitlab" },
     { icon: SiPostman, title: "Postman" },
+    { icon: SiNextdotjs, title: "Next Js" },
   ];
   //   const icons = [
   //     FaJs,
