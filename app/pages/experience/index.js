@@ -7,7 +7,7 @@ export default function Experience() {
         "Information and Communication Technology - Medical Colleges of Northern Philippines/International School of Asia and the Pacific",
       description:
         "Developed a comprehensive School Management System with integrated Finance and Accounting modules, delivering end-to-end functionality for educational institutions while ensuring accurate financial tracking, reporting, and compliance.",
-      link: "https://www.facebook.com/SINAGRegion02",
+      link: "https://www.mcnp.edu.ph/",
     },
     {
       date: "2021-2022",

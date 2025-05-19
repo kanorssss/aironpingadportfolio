@@ -9,7 +9,6 @@ export default function About() {
       className="flex flex-col-reverse items-center md:flex-row md:items-start py-10 px-6 md:px-20 mt-20 gap-10"
       id="about"
     >
-      {/* Left Text Content */}
       <motion.div className="text-center md:text-left md:w-2/3">
         <motion.h1
           initial={{ opacity: 0 }}
@@ -31,7 +30,6 @@ export default function About() {
           </span>
         </motion.h1>
 
-        {/* Social media icons centered on small screens */}
         <div className="flex justify-center md:justify-start">
           <Social />
         </div>
@@ -83,7 +81,7 @@ export default function About() {
           alt="Airon Pingad"
           fill
           className="rounded-lg object-cover"
-          src="/images/about/image0(13).jpeg"
+          src="/images/about/aironss.png"
         />
       </motion.div>
     </section>
