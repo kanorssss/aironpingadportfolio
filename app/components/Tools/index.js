@@ -12,6 +12,7 @@ import {
   FaPhp,
   FaPython,
   FaBootstrap,
+  FaGithub,
 } from "react-icons/fa6";
 import { TbBrandCSharp } from "react-icons/tb";
 import { IoLogoIonic } from "react-icons/io";
@@ -41,6 +42,7 @@ export default function Tools() {
     { icon: FaSquareGitlab, title: "Gitlab" },
     { icon: SiPostman, title: "Postman" },
     { icon: SiNextdotjs, title: "Next Js" },
+    { icon: FaGithub, title: "GitHub" },
   ];
   //   const icons = [
   //     FaJs,
