@@ -17,7 +17,7 @@ export default function About() {
           className="mb-3 text-3xl md:text-4xl font-medium tracking-tighter relative inline-block"
         >
           <span className="inline-block relative">
-            Hey, I'm Airon Jim
+            Hey, I'm Airon Jim(ronron)
             <motion.div
               animate={{
                 x: [0, 10, 0, -10, 0],
@@ -37,9 +37,7 @@ export default function About() {
               }}
               transition={{ duration: 1, repeat: Infinity }}
               className="inline-block ml-1"
-            >
-              👋
-            </motion.div>
+            ></motion.div>
           </span>
         </motion.h1>
 
