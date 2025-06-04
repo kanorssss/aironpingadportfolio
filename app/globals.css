@@ -18,12 +18,178 @@
 
 body {
   color: #e2e8f0;
-  background-color: #1a1a1a;
-  background-image: linear-gradient(45deg, #222222 25%, transparent 25%, transparent 75%, #222222 75%, #222222),
-                    linear-gradient(45deg, #222222 25%, transparent 25%, transparent 75%, #222222 75%, #222222);
-  background-size: 10px 10px;
-  background-position: 0 0, 5px 5px;
+  background: #0f0f0f;
+  position: relative;
   min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* High-definition animated geometric pattern */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 120%;
+  height: 120%;
+  z-index: -2;
+  background-image: 
+    /* Thin diagonal lines - more HD */
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 2px,
+      rgba(255, 255, 255, 0.08) 2px,
+      rgba(255, 255, 255, 0.08) 2.5px,
+      transparent 2.5px,
+      transparent 40px
+    ),
+    repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 2px,
+      rgba(255, 255, 255, 0.08) 2px,
+      rgba(255, 255, 255, 0.08) 2.5px,
+      transparent 2.5px,
+      transparent 40px
+    ),
+    /* Fine grid lines */
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 19px,
+      rgba(255, 255, 255, 0.03) 19px,
+      rgba(255, 255, 255, 0.03) 20px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 19px,
+      rgba(255, 255, 255, 0.03) 19px,
+      rgba(255, 255, 255, 0.03) 20px
+    );
+  animation: slidePattern 30s linear infinite;
+}
+
+/* Large animated geometric shapes - triangular patterns */
+body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image:
+    /* Large triangle outline - top right */
+    conic-gradient(
+      from 0deg at 85% 15%,
+      transparent 0deg,
+      rgba(255, 255, 255, 0.12) 118deg,
+      rgba(255, 255, 255, 0.12) 122deg,
+      transparent 124deg,
+      transparent 238deg,
+      rgba(255, 255, 255, 0.12) 240deg,
+      rgba(255, 255, 255, 0.12) 244deg,
+      transparent 246deg,
+      transparent 358deg,
+      rgba(255, 255, 255, 0.12) 358deg,
+      rgba(255, 255, 255, 0.12) 362deg,
+      transparent 364deg
+    ),
+    /* Medium triangle - bottom left */
+    conic-gradient(
+      from 180deg at 15% 85%,
+      transparent 0deg,
+      rgba(255, 255, 255, 0.08) 118deg,
+      rgba(255, 255, 255, 0.08) 122deg,
+      transparent 124deg,
+      transparent 238deg,
+      rgba(255, 255, 255, 0.08) 240deg,
+      rgba(255, 255, 255, 0.08) 244deg,
+      transparent 246deg,
+      transparent 358deg,
+      rgba(255, 255, 255, 0.08) 358deg,
+      rgba(255, 255, 255, 0.08) 362deg,
+      transparent 364deg
+    ),
+    /* Small triangle - center right */
+    conic-gradient(
+      from 90deg at 90% 50%,
+      transparent 0deg,
+      rgba(255, 255, 255, 0.06) 118deg,
+      rgba(255, 255, 255, 0.06) 122deg,
+      transparent 124deg,
+      transparent 238deg,
+      rgba(255, 255, 255, 0.06) 240deg,
+      rgba(255, 255, 255, 0.06) 244deg,
+      transparent 246deg,
+      transparent 358deg,
+      rgba(255, 255, 255, 0.06) 358deg,
+      rgba(255, 255, 255, 0.06) 362deg,
+      transparent 364deg
+    ),
+    /* Additional intersecting lines */
+    linear-gradient(
+      30deg,
+      transparent 0%,
+      transparent 49.5%,
+      rgba(255, 255, 255, 0.1) 49.5%,
+      rgba(255, 255, 255, 0.1) 50.5%,
+      transparent 50.5%,
+      transparent 100%
+    ),
+    linear-gradient(
+      120deg,
+      transparent 0%,
+      transparent 49.5%,
+      rgba(255, 255, 255, 0.1) 49.5%,
+      rgba(255, 255, 255, 0.1) 50.5%,
+      transparent 50.5%,
+      transparent 100%
+    );
+  background-size: 
+    400px 400px,
+    300px 300px,
+    200px 200px,
+    800px 800px,
+    800px 800px;
+  background-position:
+    0 0,
+    0 0,
+    0 0,
+    200px 100px,
+    -200px -100px;
+  animation: floatShapes 25s ease-in-out infinite;
+}
+
+/* Keyframe animations */
+@keyframes slidePattern {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-40px, -40px);
+  }
+}
+
+@keyframes floatShapes {
+  0%, 100% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 1;
+  }
+  25% {
+    transform: translate(15px, -10px) rotate(1deg);
+    opacity: 0.2;
+  }
+  50% {
+    transform: translate(-10px, 15px) rotate(-0.5deg);
+    opacity: 0.4;
+  }
+  75% {
+    transform: translate(8px, -5px) rotate(0.5deg);
+    opacity: 0.4;
+  }
 }
 
 @layer utilities {
