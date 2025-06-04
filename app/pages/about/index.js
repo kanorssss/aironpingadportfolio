@@ -14,21 +14,36 @@ export default function About() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
-          className="mb-3 text-3xl md:text-4xl font-medium tracking-tighter"
+          className="mb-3 text-3xl md:text-4xl font-medium tracking-tighter relative inline-block"
         >
-          Hey, I'm Airon Jim{" "}
-          <span>
+          <span className="inline-block relative">
+            Hey, I'm Airon Jim
+            <motion.div
+              animate={{
+                x: [0, 10, 0, -10, 0],
+              }}
+              transition={{
+                duration: 2,
+                repeat: Infinity,
+                ease: "easeInOut",
+              }}
+              className="absolute -bottom-1 left-0 h-[2px] w-full bg-gradient-to-r from-transparent via-blue-500 to-transparent rounded-full"
+            />
+          </span>
+          <span className="inline-block">
             <motion.div
               animate={{
                 rotate: [0, -15, 0],
-                transition: { duration: 1, repeat: Infinity },
               }}
-              className="inline-block"
+              transition={{ duration: 1, repeat: Infinity }}
+              className="inline-block ml-1"
             >
               👋
             </motion.div>
           </span>
         </motion.h1>
+
+        {/* Animated Glowing Line */}
 
         <div className="flex justify-center md:justify-start">
           <Social />
