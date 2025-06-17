@@ -19,10 +19,10 @@ import { IoLogoIonic } from "react-icons/io";
 import { SiNextdotjs, SiPostman } from "react-icons/si";
 import {
   SiTailwindcss,
-  SiVuetify,
   SiMysql,
   SiFirebase,
   SiDotnet,
+  SiExpress,
 } from "react-icons/si";
 export default function Tools() {
   const skills = [
@@ -36,13 +36,14 @@ export default function Tools() {
 
     { icon: SiTailwindcss, title: "Tailwind CSS" },
     { icon: FaBootstrap, title: "Bootstrap" },
-    { icon: SiVuetify, title: "Vuetify" },
+
     { icon: FaHtml5, title: "Html" },
     { icon: FaCss3Alt, title: "Css" },
-    { icon: FaSquareGitlab, title: "Gitlab" },
+    { icon: FaNodeJs, title: "Node.js" },
     { icon: SiPostman, title: "Postman" },
     { icon: SiNextdotjs, title: "Next Js" },
     { icon: FaGithub, title: "GitHub" },
+    { icon: SiExpress, title: "Express.js" },
   ];
   //   const icons = [
   //     FaJs,
